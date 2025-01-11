@@ -1,0 +1,15 @@
+=================OnClick Eventt===============
+
+const header = document.querySelector('h1');
+header.addEventListener('mousedown', myClick1);
+
+header.addEventListener('mouseup', myClick);
+
+function myClick1(name){
+    header.style.color = "red";
+    console.log("My Name is An");
+}
+function myClick(name){
+    header.style.backgroundColor = "yellow";
+    console.log("My Name is Anny");
+}
