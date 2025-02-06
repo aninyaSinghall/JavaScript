@@ -1,3 +1,50 @@
 // ----------------------------------------------
 // Programming Question: Longest Word in a String
 // -----------------------------------------------
+
+// Day 1
+
+
+//? Q: Write a function findLongestWord that takes a string as input and returns the longest word in the string. If there are
+//? multiple longest word, return the first one encountered 
+
+
+//* Contraints:
+//? The input string may contains alphabetic characters, digits, spaces, and punctuation.
+//? The input string is non-empty.
+//? the input string may contains multiple words separated by spaces
+
+//* Notes:
+//? If the input string is empty or contains only whitespace, the function should return an false.
+//? The function should ignore leading and trailing whitespace when determining the longest word
+
+// this is the First Way to solve the question
+const findLongestWord = (str) => {
+    if(str.trim() == 0){
+        return false;
+    }
+
+    let words = str.split(" ");
+    words = words.sort((a , b) => b.length - a.length);
+    // console.log(words);
+    return words[0];
+}
+
+console.log(findLongestWord("My name is Aninya"));
+
+// This is the another way to solve the problem
+const findLargWord = (arr)=> {
+    if(arr.trim() == 0){
+        return false;
+    }
+
+    words = arr.split(" ");
+    return words.reduce(
+        (accum, curWord) => (curWord.length > accum.length ? curWord : accum),
+        ""
+    );
+};
+
+console.log(findLargWord("this is the best way to solve"));
+
+
