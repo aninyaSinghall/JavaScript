@@ -1,0 +1,59 @@
+==================================FUNCTION======================================
+//? Note:- Functions is a block of resuable code that performs a specific task or set of tasks.
+
+//? 3 students at a same time wants a find sum of two numbers
+
+function sumOfTwoNumbers(a, b){
+    var sum = a + b;
+    return sum;
+}
+
+console.log(sumOfTwoNumbers(5,1)); // 1st student
+console.log(sumOfTwoNumbers(7,1)); // 2nd student
+console.log(sumOfTwoNumbers(10,1)); // 3rd student
+
+// ====================FUNCTION DECLARATION OR FUNCTION INVOCATION==============================
+function greet(){
+    console.log("Hello"); // print the statement
+}
+
+greet(); // CALLING THE FUNCTION IS INVOCATION FUNCTION
+
+===============FUNCTION PARAMETER OR ARGUMENT=================
+
+function sum(a,b // parameter1, parameter2){
+    console.log(a+b);
+}
+
+sum(10,15 // arguments1, argument2)
+
+//======================FUNCTION EXPRESSION======================
+
+// function sumOfTwoNumbers(a, b){
+//     var sum = a + b;
+//     return sum;
+// } // THIS IS THE WHOLE FUNCTION EXPRESSION
+
+//===========================FUNCTION ANONYMOUS===================
+
+// an anonymous function is a function without a name.
+
+var result = function(a,b){
+    return a+b;
+}
+
+console.log(result(10,15));
+
+//===================IIFE--IMMEDIATELY INVOKED FUNCTION EPRESSION==========================
+
+(function sum(a,b){
+    console.log(a+b);
+})(10,15);
+
+
+// another way
+var result = (function sum(a,b){
+    return a+b;
+})(10,15);
+
+console.log(result);
