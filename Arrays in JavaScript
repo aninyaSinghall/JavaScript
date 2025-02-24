@@ -116,3 +116,18 @@ names.shift();
 console.log(names);
 
 // ========================================================================
+
+// --------------------------------------------------------------------
+// ? what if we want to add or remove anywhere in the element
+// ---------------------------------------------------------------------
+
+//? the splice()
+// splice() method of array instances changes the contents of an array by removing or replacing existing elements and/ or adding new elements in place
+
+let names = ["Aninya", "rahul", "khushi", "manshika"];
+console.log(names.splice(1,1))
+console.log(names);
+console.log(names.splice(1,1, "pagal"));
+console.log(names);
+console.log(names.splice(1,1, "pagal", "khushi"));
+console.log(names);
