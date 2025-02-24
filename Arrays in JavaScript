@@ -1,0 +1,87 @@
+// =======================CREATING ARRAY==============================
+
+// arrays in javascript can be created using the array constructor
+// or with array literals (square brakest[]);
+
+// using array constructor
+let studentNames = new Array("sohil", "rahul", "adarsh", "khushi");
+console.log(studentNames);
+
+// using array literal
+let studentSurnames = ["singhal", "Gupta", "Shrivastava", "khan"];
+console.log(studentSurnames);
+
+// we can also create an empty array 
+let arr = [];
+console.log(arr);
+
+// what is the typeof array
+let arr1 = [1,2];
+console.log(typeof arr1);
+
+// ==============ACCESSING ELEMENTS=====================================
+
+// accessing elements: array elements are accessed using zero-based indices.
+
+let fruits = ["apple", "orange", "papaya", "Kiwi"];
+console.log(fruits[0]);
+console.log(fruits[1]);
+console.log(fruits[2]);
+console.log(fruits[3]);
+
+// want to all length of array
+let fruits2 = ["apple", "orange", "papaya", "Kiwi"];
+console.log(fruits2.length);
+
+// =====================MODIFYING ELEMENTS===============================
+
+let fruits3 = ["apple", "orange", "mango"];
+fruits3[2] = "orange";
+console.log(fruits3[2]);
+
+
+// =====================ARRAY TRAVERSAL / ITERATING OVER ARRAY===========
+
+//?1.for of loop also know as iterable=========to get elements
+// for of loop is used to iterable over the values of an iterable object such as arrays, string, or otherr iterable objects.
+
+let studentRollNo = [22,33,44,55,66,11];
+for(numbers of studentRollNo){
+    console.log(numbers);
+}
+
+// ========================================================================
+
+//? 2. for in loop=====o get index number
+// for in loop is used to iterate over the properties (including indices) of an object
+
+let names = ["Aninya", "rahul", "khushi", "manshika"];
+for(items in names){
+    console.log(items);
+}
+
+// ========================================================================
+
+//? 3. for Each Method
+// the arr.forEach() method calss the provided function once for each element of the array. the provided function my perform any kind of operation on the elements of the given array
+
+let names = ["Aninya", "rahul", "khushi", "manshika"];
+
+names.forEach((currentElement,index, arr)=>{
+     console.log(`${currentElement} ${index}`);
+     console.log(arr);
+});
+   
+// ========================================================================
+
+//? map function
+// map() created a new array from calling a function for every array element. map() does not change the original array
+
+let names = ["Aninya", "rahul", "khushi", "manshika"];
+const newArr = names.map((currentEle, index, arr) => {
+    return `my name is ${currentEle}`;
+});
+
+console.log(newArr);
+
+// =========================================================================
