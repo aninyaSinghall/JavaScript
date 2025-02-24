@@ -85,3 +85,34 @@ const newArr = names.map((currentEle, index, arr) => {
 console.log(newArr);
 
 // =========================================================================
+
+//? How to insert , add, remove, replace elements in array
+
+//1. pup() for to add the element to the end of an array
+// the push method returns the new length of the array
+let names = ["Aninya", "rahul", "khushi", "manshika"];
+names.push("Parag");
+console.log(names);
+
+// ========================================================================
+
+//2. pop() for the remove the last element from an array
+let names = ["Aninya", "rahul", "khushi", "manshika"];
+names.pop();
+console.log(names);
+
+// ========================================================================
+
+//3. unshift method that adds one or more thing elements to the beginning of an array
+let names = ["Aninya", "rahul", "khushi", "manshika"];
+names.unshift("Mine");
+console.log(names);
+
+// ========================================================================
+
+//4. shift method to remove to the beginning of an array
+let names = ["Aninya", "rahul", "khushi", "manshika"];
+names.shift();
+console.log(names);
+
+// ========================================================================
