@@ -27,5 +27,23 @@ function isPalindrome(str){
     }
 }
 
+========================================================================================================================================================================
+// write a program to mutiply each element with 2 with the help of forEach
+// map- creates a new array with transformed elements.
+
+let num = [1,2,3,4,5];
+num.forEach((current)=>{
+    console.log(current*2);
+    // perform an action to each element
+})
+
+// map
+const num2 = num.map((current)=>{
+    return current*2;
+})
+
+console.log(num2);// created a new array
+
+
 console.log(isPalindrome("level"));
 
